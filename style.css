@@ -28,22 +28,22 @@ html{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
+
 }
 body{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vw;
     flex-wrap: wrap;
-    max-width: 1440px;
     background-color: var(--clr-White);
+ 
 }
 main{
     padding:3rem;
 }
-img{width: 100vw;}
+
+header,picture,img{width: 100%;}
 h1,h2{
     font-family: var(--font-family-h);
 }
@@ -122,11 +122,8 @@ position: relative;
       top: 190; /* Igazítás függőlegesen */
      
 }
-.list--dotted--simple li::before{
-    
-      left: 5px; /* Az eltolás beállítása */
-      
-     
+.list--dotted--simple li::before{ 
+      left: 5px; /* Az eltolás beállítása */ 
 }
 .list__item--bold{
     font-weight: 800;
@@ -154,6 +151,8 @@ footer{
 @media (min-width:675px){
     body{
         max-width:740px;
+        margin-top:5rem;
+        border-radius:20px;
 
     }
     picture, header{
@@ -165,10 +164,13 @@ footer{
     }
     img{
         max-width:666px;
-    border-radius: 5px;
+    border-radius: 15px;
 justify-self: center;}
 main{
     max-width: 740px;
+}
+header{
+    padding-top:3rem;
 }
 table{
 max-width: 651px;
