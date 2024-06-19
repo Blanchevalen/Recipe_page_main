@@ -70,11 +70,12 @@ p{
     background-color: var(--clr-Rose-White);
     border-radius: 5px;
 }
-h3{
+.list__title{
     color:var(--clr-Dark-Raspberry);
     font-family: var(--font-family-p);
     font-weight: 600;
     margin-bottom: 1rem;
+    font-size:18px;
 }
 .list{
     color:var(--clr-Wenge-Brown);   
